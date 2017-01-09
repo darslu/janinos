@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+     <link rel="shortcut icon" type="image/x-icon" href="/smallicon">
+    <meta name="viewport" content="width=device-width" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <title> Janinos siuvykla </title>
+  </head>
+ <body>
+<nav>
+ 
+<ul class="">
+  <a href="index.html"> <img src="miniLogo.png" height="30" width="30" id="miniLogo"/></a>
+   <a href="apiemus.html"><li>Apie mus</li></a>
+   <a href="siuvimas.html"><li>Siuvimas ir taisymas</li></a>
+   <a href="valymas.html"><li>Valymas</li></a>
+   <a href="galerija.html"><li>Galerija</li></a>
+   <a href="kontaktai.html"><li>Kontaktai</li></a>
+   <a href="https://www.facebook.com/siuvyklaJB/"><img src="facebook.jpg" height="40" width="110" id="facebook" class="facebook" /></a>
+ </ul>
+<div class="handler">Meniu</div>
+ </nav>
+<div class="apie">
+<h2 id="musRasite">Mus galite rasti:</h2>
+
+<style type="text/css">
+
+#musRasite {
+position: relative;
+color: black;
+font-size: 20px;
+font-family: Tahoma;
+text-align: center;
+}
+
+#googleMap {width: 250px;
+height:250px;
+position: relative;
+display: inline-block;
+margin-left: 30px;
+}
+
+#googleMap2 {width:250px;
+height:250px;
+position: relative;
+display: inline-block;
+margin-left: 30px;
+}
+
+#silainiaiKontaktai{
+position: relative;
+/*font-family: Tahoma;*/
+font-size: 20px;
+color: black;
+display: inline-block;
+}
+#raudondvarisKontaktai{
+position: relative;
+/*font-family: arial black;*/
+font-size: 20px;
+color: black;
+display: inline-block;
+}
+
+#tel
+</style>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(54.9145056,23.8408797),
+    zoom:16,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  
+  var marker=new google.maps.Marker({
+  position:new google.maps.LatLng(54.9145056,23.8408797),
+  animation:google.maps.Animation.BOUNCE
+  });
+
+marker.setMap(map);
+  
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(54.9195791,23.8793064),
+    zoom:16,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap2"),mapProp);
+  
+  var marker=new google.maps.Marker({
+  position:new google.maps.LatLng(54.9195791,23.8793064),
+  animation:google.maps.Animation.BOUNCE
+  });
+
+marker.setMap(map);
+  
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+ 
+ 
+<div id="googleMap2">
+</div>
+
+<div id = "silainiaiKontaktai">
+<strong><u> Šilainiuose</u></strong>, adresu Baltijos g. 59. <br> <br>
+Darbo laikas: 
+<ul> Pirmadienis-penktadienis <br> Nuo 10 iki 20h. </ul>
+<ul> Šeštadienis<br> Nuo 10 iki 15h. </ul>
+</div>
+
+
+ <div id="googleMap">
+</div>
+
+<div id = "raudondvarisKontaktai">
+<u> <strong>Raudondvario plente</strong></u>, <br> adresu Raudondvario pl. 166. <br> <br>
+ Darbo laikas: 
+<ul> Pirmadienis-penktadienis</ul>
+<ul> Nuo 10 iki 20h. </ul>
+<ul> Šeštadienis </ul>
+<ul> Nuo 10 iki 15h. </ul>
+</div>
+  
+<br> <br>
+<div id="telNR">
+  <strong><a href="tel:+37060094398 ">Susisiekti tel:+37060094398</a></strong> 
+</div>
+
+
+  
+
+</body>
+</html>
+ <script> 
+$(".handler").on("click", function(){
+$("nav ul").toggleClass("showing");
+});
+</script>
+ </body>
+</html>

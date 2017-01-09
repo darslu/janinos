@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+     <link rel="shortcut icon" type="image/x-icon" href="smallicon.ico">
+    <meta name="viewport" content="width=device-width" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title> Janinos siuvykla </title>
+  </head>
+ <body>
+<nav>
+ <div class="handler">Meniu <img src="optionButton.png" height="35" width="45" id="option"></div>
+<ul class="" id="px">
+  <a href="index.html"> <img src="miniLogo.png" height="30" width="30" id="miniLogo"/></a>
+   <a href="apiemus.html"><li>Apie mus</li></a>
+   <a href="siuvimas.html"><li>Siuvimas ir taisymas</li></a>
+   <a href="valymas.html"><li>Valymas</li></a>
+   <a href="galerija.html"><li>Galerija</li></a>
+   <a href="kontaktai.html"><li>Kontaktai</li></a>
+   <a href="https://www.facebook.com/siuvyklaJB/"><img src="facebook.jpg" height="40" width="110" id="facebook" class="facebook" /></a>
+ </ul>
+
+ </nav>
+<div class="apie">
+<h2>Jau greitai!</h2>
+</div>
+ <script> 
+$(".handler").on("click", function(){
+$("nav ul").toggleClass("showing");
+});
+</script>
+ </body>
+</html>

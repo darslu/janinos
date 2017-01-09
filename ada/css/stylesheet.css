@@ -1,0 +1,160 @@
+
+
+body {
+	background: url(../newLogo.png) no-repeat center center fixed;
+	background-size: cover;
+	z-index: -100;
+	font-family: Optima; Tahoma;
+}
+
+nav ul {
+	margin-top: 20px;
+	background-color: #FFD7AB;
+	color: #9C2B00;
+	position: relative;
+	text-align: left;
+	border-radius: 20px;
+    -webkit-transition: max-height 0.4s;
+    -ms-transition: max-height 0.4s;
+    -moz-transition: max-height 0.4s;
+    -o-transition: max-height 0.4s;
+    transition: max-height 0.4s;
+    
+         }
+
+nav ul li {
+	display: inline-block;
+	font-size: 1em;
+	padding:15px 10px 15px 10px;
+	
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#miniLogo {
+	 margin-right: 4px;
+    position: relative;
+    top: 10px;
+}
+
+
+nav ul li:hover {
+	background-color: #D25620;
+	color: white;
+	padding:16px 15px 15px 15px;
+	font-size: 1em;
+}
+
+#facebook {
+    float: right;
+	margin-left: 5px;
+    position: relative;
+    top:5px;
+    padding-right: 10px;
+    
+   
+}
+.handler {
+ 	width: 90%;
+ 	background-color:orange;
+ 	text-align: left;
+ 	box-sizing: border-box;
+ 	padding:12px 15px 15px 15px;
+ 	color: white;
+ 	border-radius: 20px;
+ 	display: none;
+ 	margin-left: 20px;
+ 	margin-right: 20px;
+ 	font-size: 20px;
+ 	margin-top: 20px;
+ }
+
+
+
+/*phone view*/
+@media screen and (max-width: 500px) {
+	nav ul{
+		max-height: 0;
+		display:none;
+	}
+	.showing{
+		max-height: 20em;
+		display:block;
+		margin-right: 20px;
+		margin-left: 20px;
+   	    padding-bottom: 20px;
+   	    position: relative;   
+	}
+  nav ul li  {
+  	display: block;
+  	text-align: left;
+  	box-sizing: border-box;
+  }
+  body {
+	background: url(../telFoto.png) no-repeat center center fixed;
+	background-size: cover;
+	z-index: -100;
+	font-family: Optima; Tahoma;
+	font-size: 1.2em;
+  }
+  nav ul li:hover {
+	background-color: #D25620;
+	color: white;
+	padding: 10px 10px ;
+	font-size: 1.1em;
+	border-radius: 20px;
+	margin-right: 20px;
+
+   }
+ .handler {
+ 	display: block;
+ 	cursor: pointer;
+   }
+   
+   	
+   
+  #facebook {
+	 margin-right: 4px;
+    position: relative;
+    float: none;
+
+   }
+  #miniLogo {
+  	display: none;
+  	position: relative;
+	padding-right: 15px;
+    position: relative;
+    top: 10px;
+    margin-right: 45px;
+  
+
+ } 
+ #option{
+ 	float: right;
+ 	padding-top: -10px;
+ 	margin-top: -4px;
+
+ }  
+}
+
+ /*apie*/
+
+ .apie{
+ 	height: 64vh;
+ 	width: 100%;
+ 	background-color: orange;
+ 	position: relative;
+ 	border-radius: 20px;
+ }
+
+
+
+  @media screen and (max-width: 414px){ 
+   .apie{
+   	height: 100%;
+   }
+ }
+
