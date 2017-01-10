@@ -4,7 +4,13 @@ body {
 	background: url(../foto/newLogo.png) no-repeat center center fixed;
 	background-size: cover;
 	z-index: -100;
-	font-family: Optima; Tahoma;
+	font-family: Tahoma;
+
+}
+.background {
+	
+		opacity: 0.5;
+    filter: alpha(opacity=50)
 }
 
 nav ul {
@@ -23,6 +29,7 @@ nav ul {
          }
 
 nav ul li {
+	font-family: Optima; Tahoma;
 	display: inline-block;
 	font-size: 1em;
 	padding:15px 10px 15px 10px;
@@ -66,13 +73,58 @@ nav ul li:hover {
  	color: white;
  	border-radius: 20px;
  	display: none;
- 	margin-left: 20px;
- 	margin-right: 20px;
+ 	margin-left: auto;
+ 	margin-right: auto;
  	font-size: 20px;
  	margin-top: 20px;
  }
+.apie {
+	overflow: scroll;
 
+}
+#telNR {
+	background-color: #ff6619;
+	color: white;
+	width: 250px;
+	height: 50px;
+	text-align: center;
+	margin-top: -10
+	padding-top: 10px; 
+	border-radius: 20px;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+}
+div span {
+	font-size: 1.3em;
+}
 
+h1 {
+	font-size: 15px;
+}
+h2 {
+font-size: 13px;
+}
+
+h3{
+font-size: 13px;
+}
+
+p {
+	font-size: 13px;
+}
+.apie li {
+font-size: 13px;
+}
+
+h1 h2 h3 p {
+	margin-right: 20px;
+}
+
+.tik {
+	margin-left: 20px;
+}
 
 /*phone view*/
 @media screen and (max-width: 500px) {
@@ -81,10 +133,11 @@ nav ul li:hover {
 		display:none;
 	}
 	.showing{
+		width: 75%;
 		max-height: 20em;
 		display:block;
-		margin-right: 20px;
-		margin-left: 20px;
+		margin-right: auto;
+		margin-left: auto;
    	    padding-bottom: 20px;
    	    position: relative;   
 	}
@@ -112,6 +165,9 @@ nav ul li:hover {
  .handler {
  	display: block;
  	cursor: pointer;
+ 	margin-bottom: 20px;
+
+
    }
    
    	
@@ -137,6 +193,7 @@ nav ul li:hover {
  	padding-top: -10px;
  	margin-top: -4px;
 
+
  }  
 }
 
@@ -145,9 +202,10 @@ nav ul li:hover {
  .apie{
  	height: 64vh;
  	width: 100%;
- 	background-color: orange;
+ 	background-color: #FFD7AB;
  	position: relative;
  	border-radius: 20px;
+ 	overflow: scroll;
  }
 
 
