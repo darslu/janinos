@@ -70,47 +70,42 @@ display: inline-block;
 
 #tel
 </style>
-<script src="http://maps.googleapis.com/maps/api/js"></script>
 <script>
-function initialize() {
-  var mapProp = {
-    center:new google.maps.LatLng(54.9145056,23.8408797),
-    zoom:16,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-  
-  var marker=new google.maps.Marker({
-  position:new google.maps.LatLng(54.9145056,23.8408797),
-  animation:google.maps.Animation.BOUNCE
-  });
+var map, map2;
 
-marker.setMap(map);
-  
-}
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
+function initialize(condition) {
+    var myOptions1 = {
+        zoom: 16,
+        center: new google.maps.LatLng(54.9195791, 23.8793064),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+     var myOptions2 = {
+        zoom: 16,
+        center: new google.maps.LatLng(54.9145056, 23.8408797),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(document.getElementById("googleMap2"), myOptions1);
 
-<script src="http://maps.googleapis.com/maps/api/js"></script>
-<script>
-function initialize() {
-  var mapProp = {
-    center:new google.maps.LatLng(54.9195791,23.8793064),
-    zoom:16,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap2"),mapProp);
-  
-  var marker=new google.maps.Marker({
+    var map2 = new google.maps.Map(document.getElementById("googleMap"), myOptions2);
+
+ var marker=new google.maps.Marker({
   position:new google.maps.LatLng(54.9195791,23.8793064),
   animation:google.maps.Animation.BOUNCE
   });
-
 marker.setMap(map);
-  
+
+var marker2=new google.maps.Marker({
+  position:new google.maps.LatLng(54.9145056,23.8408797),
+  animation:google.maps.Animation.BOUNCE
+  });
+marker2.setMap(map2);
+   
 }
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
+</script> 
+
+   <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBW_g7-9MwAU6wIAoDpXhlLDop_R2P_17M&callback=initialize">
+</script> 
 
  
  
