@@ -79,7 +79,8 @@ nav ul li:hover {
  	margin-top: 20px;
  }
 .apie {
-	overflow: scroll;
+	overflow-y: scroll !important;
+
 
 }
 #telNR {
@@ -116,6 +117,7 @@ p {
 }
 .apie li {
 font-size: 13px;
+
 }
 
 h1 h2 h3 p {
@@ -125,6 +127,20 @@ h1 h2 h3 p {
 .tik {
 	margin-left: 20px;
 }
+.wrap{
+width:260px;
+height:260px;
+display: inline-block;	
+overflow: hidden;
+margin: 10px;
+text-align:center	
+}
+
+.lygiavimasFoto {
+	text-align:center;
+}
+
+
 
 /*phone view*/
 @media screen and (max-width: 500px) {
@@ -207,6 +223,14 @@ h1 h2 h3 p {
  	border-radius: 20px;
  	overflow: scroll;
  }
+
+ .lenta  img{
+ width: 100%;
+    height: auto;
+position: relative;
+object-fit: contain;
+display: inline-block;
+}
 
 
 
